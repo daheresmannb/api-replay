@@ -20,7 +20,7 @@ class CreateReplaysTable extends Migration {
             }
         );
         DB::statement("ALTER TABLE vjs_replay modify replay_unity MEDIUMBLOB");
-        DB::statement("ALTER TABLE vjs_replay modify replay_ui MEDIUMBLOB");
+        DB::statement("ALTER TABLE vjs_replay modify replay_ui MEDIUMBLOB"); 
     }
 
     public function down() {
